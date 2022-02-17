@@ -140,7 +140,7 @@ h1 {
 }
 
 .display-password {
-  padding: 12px 4px;
+  padding: 20px 4px;
   position: relative;
   background-color: #151537;
   box-sizing: border-box;
@@ -149,8 +149,8 @@ h1 {
 .create-button {
   padding: 0 1px;
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 7px;
+  right: 7px;
   margin-left: auto;
   text-indent: -9999px;
 }
