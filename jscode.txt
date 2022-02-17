@@ -1,5 +1,3 @@
-
-
 let symbol = "!@#$%^&*()_+<>?/.,';:[]\|",
 random_symbol = symbol[Math.floor(Math.random() * symbol.length)],
 generated_password = "",
@@ -15,30 +13,33 @@ const password_contents = [
     random_symbol
 ];
 
-generator_button.addEventListener('click',function(){
-    let password_length = parseInt(document.querySelector('.length-value').value);
-    let final_password = "";
-    while(generated_password.length <= password_length){
-        generatePassword();
-    }
-    if(generated_password.length > password_length){
-        final_password = generated_password.slice(0,password_length);
-    }else{
-        final_password = generated_password;
-    }
-    display_password.innerText = final_password;
-            password_box.style.padding = "12px 0";
-});
+generator_button.addEventListener('click',generatePassword);
 
 function generatePassword(){
     const rules_checked = document.querySelectorAll('input[type="checkbox"]');
     rules_checked.forEach((i,index)=>{
         if(i.checked == true){
             generated_password += password_contents[index];
-            
+            display_password.innerText = generated_password;
+            password_box.style.padding = "12px 0";
         }
        
     })
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
