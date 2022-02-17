@@ -103,24 +103,28 @@ li {
   width: 86%; 
   margin: 0 auto;
 }
-/*=================================
-  Header styling starts here
-=================================*/
-
-
-
-
-
-
-/*=================================
-  Header styling ends here
-=================================*/  
 
 /*=================================
   main styling starts here
 =================================*/
 
+main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3B3B98;
+}
 
+.password-generator {
+  background-color: #23235B;
+  color: #fff;
+}
+
+h1 {
+  font-size: 25px;
+  text-align: center;
+}
 
 
 
@@ -130,20 +134,6 @@ li {
 /*=================================
   main styling ends here
 =================================*/
-
-/*=================================
-  footer styling starts here
-=================================*/ 
-
-
-
-
-
-
-
- /*=================================
-  footer styling ends here
-=================================*/ 
 
 /*media query starts*/
 /*media query for 995px starts here*/
