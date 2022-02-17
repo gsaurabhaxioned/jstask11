@@ -139,12 +139,24 @@ h1 {
   justify-content: space-between;
 }
 
-.generator-box:nth-child(1){
+.display-password {
+  padding: 12px 4px;
   background-color: #151537;
+  box-sizing: border-box;
 }
 
 .create-button {
+  padding: 0 1px;
   margin-left: auto;
+  text-indent: -9999px;
+}
+
+.create-button::before {
+  content: "\f14b";
+  float: right;
+  font-family: "fontAwesome";
+  font-size: 22px;
+  text-indent: 0;
 }
 
 .length-value {
