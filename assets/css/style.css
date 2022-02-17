@@ -117,8 +117,14 @@ main {
 }
 
 .password-generator {
+  padding: 20px;
+  display: flex;
+  flex-basis: 20.5%;
+  flex-direction: column;
+  row-gap: 16px;
   background-color: #23235B;
   color: #fff;
+  font-size: 14px;
 }
 
 h1 {
@@ -127,6 +133,32 @@ h1 {
 }
 
 
+.generator-box {
+  display: flex;
+  flex-basis: 100%;
+  justify-content: space-between;
+}
+
+.generator-box:nth-child(1){
+  background-color: #151537;
+}
+
+.create-button {
+  margin-left: auto;
+}
+
+.length-value {
+  width: 60px;
+}
+
+.generate-button button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  color: #fff;
+  background-color: #3B3B98;
+  font-size: 14px;
+}
 
 
 
