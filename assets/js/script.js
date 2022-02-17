@@ -2,7 +2,8 @@ let symbol = "!@#$%^&*()_+<>?/.,';:[]\|",
 random_symbol = symbol[Math.floor(Math.random() * symbol.length)],
 generated_password = "",
 generator_button = document.querySelector('.click-to-generate'),
-display_password = document.querySelector('.display-password');
+password_box = document.querySelector('.display-password'),
+display_password = document.querySelector('.show-password-here');
 
 
 const password_contents = [
@@ -20,6 +21,7 @@ function generatePassword(){
         if(i.checked == true){
             generated_password += password_contents[index];
             display_password.innerText = generated_password;
+            password_box.style.padding = "12px 0";
         }
        
     })
