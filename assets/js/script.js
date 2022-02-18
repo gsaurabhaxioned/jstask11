@@ -3,7 +3,7 @@
 let generated_password = "",
 generator_button = document.querySelector('.click-to-generate'),
 password_box = document.querySelector('.display-password'),
-copy_button = document.querySelector('.create-button'),
+copy_button = document.querySelector('.copy-button'),
 display_password = document.querySelector('.show-password-here');
 
 
