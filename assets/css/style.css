@@ -146,7 +146,7 @@ h1 {
   box-sizing: border-box;
 }
 
-.create-button {
+.copy-button {
   padding: 0 1px;
   position: absolute;
   top: 7px;
@@ -155,7 +155,7 @@ h1 {
   text-indent: -9999px;
 }
 
-.create-button::before {
+.copy-button::before {
   content: "\f14b";
   float: right;
   font-family: "fontAwesome";
@@ -184,9 +184,20 @@ h1 {
 =================================*/
 
 /*media query starts*/
+/*media query for 1024px starts here*/
+@media only screen and (max-width: 1024px) {
+
+.password-generator {
+  flex-basis: 40%;
+}
+
+}  
+
 /*media query for 995px starts here*/
 @media only screen and (max-width: 995px) {
 
-
-
-}  
+  .password-generator {
+    flex-basis: 50%;
+  }
+  
+  }
